@@ -1,6 +1,7 @@
-## screenshot.py
+# Screenshot and color analysis 
+## [screenshot.py](./screenshot.py)
 screenshot.py takes screenshots of webpages and stores to png files.
-# Install
+### Install
 0. Install chrome browser (by default in /usr/bin)
 1. ```pip install selenium```
 2. Get latest release version ```VER=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)```
@@ -16,6 +17,6 @@ screenshot.py takes screenshots of webpages and stores to png files.
 8. configure urlList in screenshot.py or load from a local file
 9. run this script with python screenshot.py
 
-## colorhist.py
+## [colorhist.py](./colorhist.py)
 colorhist.py analyzes all png files in the current path, yielding major color components and their proportions and stores to a json file.
 
