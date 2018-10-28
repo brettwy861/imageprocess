@@ -1,14 +1,15 @@
 """
 0. install chrome browser (by default in /usr/bin)
 1. pip install selenium
-2. get latest release version Ver = curl https://chromedriver.storage.googleapis.com/LATEST_RELEASE 
-3. wget https://chromedriver.storage.googleapis.com/$Ver$/chromedriver_linux64.zip
+2. get latest version VER=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+3. wget https://chromedriver.storage.googleapis.com/$VER/chromedriver_linux64.zip
 4. unzip chromedriver_linux64.zip
 5. chmod +x chromedriver
 6. sudo mv -f chromedriver /usr/local/share/chromedriver
    sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
    sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 7. make sure chromedriver exist in /usr/bin/
+8. configure urlList in this file
 8. run this script with python screenshot.py
 """
 from selenium import webdriver
